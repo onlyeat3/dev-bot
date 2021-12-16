@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "electron:build",
+    "build:prod": "vue-cli-service electron:build",
+    "dev": "vue-cli-service electron:serve",
     "lint": "vue-cli-service lint",
     "electron:build": "vue-cli-service electron:build",
     "electron:serve": "vue-cli-service electron:serve",
@@ -13,6 +15,7 @@
   },
   "main": "background.js",
   "dependencies": {
+    "ant-design-vue": "^1.6.5",
     "core-js": "^3.6.5",
     "vue": "^2.6.11",
     "vue-router": "^3.2.0",
