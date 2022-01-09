@@ -19,11 +19,13 @@
       </a-menu>
     </a-layout-sider>
     <a-layout>
-      <!-- <a-layout-header style="background: #fff; padding: 0" /> -->
-      <a-layout-content style="margin: 0 16px">
-        <keep-alive>
-          <router-view />
-        </keep-alive>
+      <!-- <a-layout-header style="background: #fff" /> -->
+      <a-layout-content>
+        <a-card>
+          <keep-alive>
+            <router-view />
+          </keep-alive>
+        </a-card>
       </a-layout-content>
       <a-layout-footer style="text-align: center">
         Ant Design ©2018 Created by Ant UED
